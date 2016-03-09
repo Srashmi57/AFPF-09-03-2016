@@ -1,0 +1,2 @@
+[22-Dec-2015 06:43:32 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/artformp/public_html/afpf/cometchat/admin/monitor.m.php on line 136
+[22-Dec-2015 06:43:32 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/artformp/public_html/afpf/cometchat/admin/monitor.m.php:136) in /home/artformp/public_html/afpf/cometchat/admin/monitor.m.php on line 160
