@@ -1,0 +1,58 @@
+<script type="text/javascript">
+$(document).ready(function () {
+	$('#add_contact_info').click(function () {
+		fnSubmitContactInfo();
+		return false;
+	});
+
+});
+</script>
+<form id="contactdetailsform" action="" method="post" role="form">
+	<div class="row">
+		<div class="col-md-12"><strong>Mobile Number<span class="star">*</span>:</strong></div>
+		<div class="col-md-9">
+			<input value="<?php if(isset($arrContactDetails) && ($arrContactDetails[0]['Girl']['girl_mobile']))
+					{ echo $arrContactDetails[0]['Girl']['girl_mobile'];} ?>" id="mob_num" name="mob_num" type="text" class="form-control validate[required]" placeholder="Mobile Number">
+		</div>
+	</div>
+	
+	
+	<div class="row">
+		<div class="col-md-12"><strong>Phone Number<span class="star">*</span>:</strong></div>
+		<div class="col-md-9">
+			<input value="<?php if(isset($arrContactDetails) && ($arrContactDetails[0]['Girl']['girl_phone']))
+					{ echo $arrContactDetails[0]['Girl']['girl_phone'];} ?>" id="phone_num" name="phone_num" type="text" class="form-control validate[required]" placeholder="Phone Number">
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-12"><strong>Country<span class="star">*</span>:</strong></div>
+		<div class="col-md-9">
+			<input value="<?php if(isset($arrContactDetails) && ($arrContactDetails[0]['Girl']['girl_phone']))
+					{ echo $arrContactDetails[0]['Girl']['girl_phone'];} ?>" id="phone_num" name="phone_num" type="text" class="form-control validate[required]" placeholder="Phone Number">
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-12"><strong>City<span class="star">*</span>:</strong></div>
+		<div class="col-md-9">
+			<input value="<?php if(isset($arrContactDetails) && ($arrContactDetails[0]['Girl']['girl_phone']))
+					{ echo $arrContactDetails[0]['Girl']['girl_phone'];} ?>" id="phone_num" name="phone_num" type="text" class="form-control validate[required]" placeholder="Phone Number">
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-12"><strong>State<span class="star">*</span>:</strong></div>
+		<div class="col-md-9">
+			<input value="<?php if(isset($arrContactDetails) && ($arrContactDetails[0]['Girl']['girl_phone']))
+					{ echo $arrContactDetails[0]['Girl']['girl_phone'];} ?>" id="phone_num" name="phone_num" type="text" class="form-control validate[required]" placeholder="Phone Number">
+		</div>
+	</div>
+	
+	
+	
+	<div class="row">
+		<div class="col-md-12">&nbsp;</div>
+		<div class="col-md-9"><button name="add_contact_info" id="add_contact_info" class="btn btn-success" type="submit">Save</button>&nbsp;<button name="cancel" id="cancel" class="btn btn-default" type="reset" onclick="window.location='<?php echo $this->Html->url('/', true);?>products'">Cancel</button></div>
+	</div>
+</form>
