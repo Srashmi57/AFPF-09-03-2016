@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" charset="utf-8">
+			function qs(ji) {
+				var hu = window.location.search.substring(1);
+				var gy = hu.split("&");
+				for (var i=0;i<gy.length;i++) {
+					var ft = gy[i].split("=");
+					if (ft[0] == ji) {
+						return ft[1];
+					}
+				}
+			}
+			window.onload = function() {
+				var c1 = qs('jabber');
+				var c2 = qs('jabber_type');
+				var c3 = qs('jabber_id');
+				document.cookie = 'cc_jabber='+c1+';path=/';
+				document.cookie = 'cc_jabber_type='+c2+';path=/';
+				document.cookie = 'cc_jabber_id='+c3+';path=/';
+				var controlparameters = {'type':'extensions', 'name':'ccjabber', 'method':'process', 'params':''};
+				controlparameters = JSON.stringify(controlparameters);
+				if(typeof(parent) != 'undefined' && parent != null && parent != self){
+					parent.postMessage('CC^CONTROL_'+controlparameters,'*');
+				} else {
+					window.opener.postMessage('CC^CONTROL_'+controlparameters,'*');;
+				}
+				var controlparameters = {'type':'extensions', 'name':'ccjabber', 'method':'closeCCPopup', 'params':{'name':'jabber'}};
+				controlparameters = JSON.stringify(controlparameters);
+				if(typeof(parent) != 'undefined' && parent != null && parent != self){
+					parent.postMessage('CC^CONTROL_'+controlparameters,'*');
+				} else {
+					window.close();
+				}
+			};
+		</script>
+	</head>
+	<body>
+	 closing...
+	</body>
+</html>
