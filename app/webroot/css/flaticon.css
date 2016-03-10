@@ -1,0 +1,118 @@
+/*@font-face {
+	font-family: "Flaticon";
+	src: url("../fonts/flaticon.eot");
+	src: url("../fonts/flaticon.eot#iefix") format("embedded-opentype"),
+	url("../fonts/flaticon.woff") format("woff"),
+	url("../fonts/flaticon.ttf") format("truetype"),
+	url("../fonts/flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}*/
+@font-face {
+  font-family: 'flaticon';
+  src: url('../fonts/flaticon.eot?49384070');
+  src: url('../fonts/flaticon.eot?49384070#iefix') format('embedded-opentype'),
+       url('../fonts/flaticon.woff?49384070') format('woff'),
+       url('../fonts/flaticon.ttf?49384070') format('truetype'),
+       url('../fonts/flaticon.svg?49384070#flaticon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'flaticon';
+    src: url('../fonts/flaticon.svg?49384070#flaticon') format('svg');
+  }
+}
+
+/* [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+    font-size: 20px;
+	font-style: normal;
+margin-left: 20px; */
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before {
+  font-family: "flaticon";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.flaticon-black183:before {
+  content: "\e000";
+}
+.flaticon-calendar68:before {
+  content: "\e001";
+}
+.flaticon-grocery6:before {
+  content: "\e002";
+}
+.flaticon-headphone4:before {
+  content: "\e003";
+}
+.flaticon-landscape:before {
+  content: "\e004";
+}
+.flaticon-magnifier13:before {
+  content: "\e005";
+}
+.flaticon-month1:before {
+  content: "\e006";
+}
+.flaticon-music170:before {
+  content: "\e007";
+}
+.flaticon-mute8:before {
+  content: "\e008";
+}
+.flaticon-next9:before {
+  content: "\e009";
+}
+.flaticon-pause8:before {
+  content: "\e00a";
+}
+.flaticon-play36:before {
+  content: "\e00b";
+}
+.flaticon-previous7:before {
+  content: "\e00c";
+}
+.flaticon-small26:before {
+  content: "\e00d";
+}
+.flaticon-speaker73:before {
+  content: "\e00e";
+}
+.flaticon-video107:before {
+  content: "\e00f";
+}
+.flaticon-volume24:before {
+  content: "\e010";
+}
+
